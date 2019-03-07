@@ -1,0 +1,31 @@
+#insertInput {
+    padding: 0 5px 0 5px;
+    margin:0 20px 0 20px;
+}
+
+.show {
+    opacity: 1;
+    transition: all 1s ease-in;/* CSS3：延迟渲染1s */
+}
+
+.hide {
+    /*opacity: 0;
+    transition: all 1s ease-in;*//* CSS3：延迟渲染1s */
+    animation: show-item  2s ease-in forwards;
+}
+
+/*自定义CSS3动画*/
+@keyframes show-item {
+    0% {
+        opacity: 0;
+        color: red;
+    }
+    50% {
+        opacity: 50%;
+        color: orange;
+    }
+    100% {
+        opacity: 100%;
+        color: yellow;
+    }
+}
